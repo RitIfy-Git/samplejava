@@ -14,4 +14,17 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+ <plugin>
+    <groupId>org.openrewrite.maven</groupId>
+    <artifactId>rewrite-maven-plugin</artifactId>
+    <version>4.43.0</version> <!-- Use latest stable version -->
+    <configuration>
+        <activeRecipes>
+            <!-- For example, Java best practices -->
+            <recipe>org.openrewrite.java.spring.boot2.SpringBoot2Upgrade</recipe>
+        </activeRecipes>
+    </configuration>
+</plugin>
+
+
 </project>
