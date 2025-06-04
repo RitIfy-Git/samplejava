@@ -22,8 +22,9 @@
             <version>4.41.0</version> <!-- check for latest version -->
             <configuration>
                 <activeRecipes>
-                    <recipe>org.openrewrite.java.ChangeJavaVersion</recipe>
-                    <recipe>org.openrewrite.java.AddComment</recipe>
+                  <recipe>com.example.SampleJavaUpdate</recipe>
+                </activeRecipes>
+            </configuration>
                 </activeRecipes>
             </configuration>
         </plugin>
