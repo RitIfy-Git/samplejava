@@ -1,0 +1,11 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.example.SampleJavaUpdate
+displayName: Sample Java Update Recipe
+description: Changes Java version and adds comments to classes
+recipeList:
+  - org.openrewrite.java.ChangeJavaVersion:
+      javaVersion: 17
+  - org.openrewrite.java.AddComment:
+      comment: "Reviewed and updated for Java 17"
+      position: BEFORE
+      cursor: "public class"
